@@ -14,7 +14,7 @@ export const Header = () => {
                         <Navigation />
                     </div>
                     <ClerkLoading>
-                        <Loader2 className="size-8 animate-spin text-slate-400"/>
+                        <Loader2 className="size-6 animate-spin text-slate-400"/>
                     </ClerkLoading>
                     <ClerkLoaded>
                         <UserButton />

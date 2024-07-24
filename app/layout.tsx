@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-
-const inter = Inter({ subsets: ["latin"] });
+import { QueryProvider } from "@/providers/query-provider";
 
 export const metadata: Metadata = {
   title: "Finance",
@@ -18,7 +17,11 @@ export default function RootLayout({
   return (
     <ClerkProvider afterSignOutUrl={"/"}>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={GeistSans.className}>
+          <QueryProvider>
+            {children}
+          </QueryProvider>
+        </body>
       </html>
     </ClerkProvider>
   );

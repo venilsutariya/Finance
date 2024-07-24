@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1721734466321,
+      "tag": "0000_living_bullseye",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1721736795780,
+      "tag": "0001_loving_namorita",
+      "breakpoints": true
+    }
+  ]
+}
