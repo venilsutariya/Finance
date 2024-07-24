@@ -20,6 +20,7 @@ const app = new Hono().get("/", clerkMiddleware(), async (c) => {
       name: accounts.name,
     })
     .from(accounts)
+    // @ts-ignore
     .where(eq(accounts.userId, auth.userId));
 
   return c.json({ data });
