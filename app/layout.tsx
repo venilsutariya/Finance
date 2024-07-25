@@ -3,6 +3,8 @@ import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { QueryProvider } from "@/providers/query-provider";
+import { SheetProvider } from "@/providers/sheet-provider";
+import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
   title: "Finance",
@@ -19,7 +21,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={GeistSans.className}>
           <QueryProvider>
+            <SheetProvider />
             {children}
+            <Toaster />
           </QueryProvider>
         </body>
       </html>
