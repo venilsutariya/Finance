@@ -15,6 +15,13 @@
       "when": 1721736795780,
       "tag": "0001_loving_namorita",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1721999561882,
+      "tag": "0002_chunky_quicksilver",
+      "breakpoints": true
     }
   ]
 }
