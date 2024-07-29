@@ -1,5 +1,6 @@
 import accounts from "./accounts";
 import categories from "./categories";
+import transactions from "./transactions";
 import { Hono } from "hono";
 import { HTTPException } from "hono/http-exception";
 import { handle } from "hono/vercel";
@@ -18,7 +19,8 @@ app.onError((err, c) => {
 
 const routes = app
     .route("/accounts", accounts)
-    .route("/categories", categories);
+    .route("/categories", categories)
+    .route("/transactions", transactions);
 
 export const GET = handle(app);
 export const POST = handle(app);
