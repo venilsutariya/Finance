@@ -17,8 +17,8 @@ export default function Page() {
           </ClerkLoaded>
         </div>
       </div>
-      <div className="h-full hidden lg:flex gap-x-4 text-4xl text-white font-[700] justify-center items-center bg-black/80">
-        <Image src={"/images/logo.svg"} height={100} width={100} alt="logo" /> <span>Finance<span className="text-blue-500">.</span></span>
+      <div className="h-full hidden lg:flex gap-x-4 text-4xl text-white font-[700] justify-center items-center bg-gradient-to-b from-blue-700 to-blue-500">
+        <Image src={"/images/logo.svg"} height={100} width={100} alt="logo" /> Finance
       </div>
     </div>
   )
